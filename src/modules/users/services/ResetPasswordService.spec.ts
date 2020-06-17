@@ -1,5 +1,4 @@
 import AppError from '@shared/errors/AppError';
-import { Cursor } from 'typeorm';
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import FakeUserTokensRepository from '../repositories/fakes/FakeUserTokensRepository';
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
