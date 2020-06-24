@@ -1,17 +1,15 @@
-import AppError from '@shared/errors/AppError';
-
 import FakeUsersRepository from '@modules/users/repositories/fakes/FakeUsersRepository';
 
-import ListProviderService from './ListProviderService';
+import ListProvidersService from './ListProvidersService';
 
 let fakeUsersRepository: FakeUsersRepository;
-let listProviders: ListProviderService;
+let listProviders: ListProvidersService;
 
 describe('ListProviders', () => {
   beforeEach(() => {
     fakeUsersRepository = new FakeUsersRepository();
 
-    listProviders = new ListProviderService(fakeUsersRepository);
+    listProviders = new ListProvidersService(fakeUsersRepository);
   });
 
   it('should be able to list the providers', async () => {
